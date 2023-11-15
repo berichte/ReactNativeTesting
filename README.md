@@ -24,11 +24,9 @@ E(Input - user actions, e.g. press) --> B
 
 ```mermaid
 graph TD
-%% Mocking side effects
-A(Input - arguments) --> B(Function)
-%% B --> C(Output - return value)
-B --> E(Output - call of external function)
-F(Input - return value of external function) --> B
-%% B --> D(external function, e.g. API call)
-%% D --> B
+%% Simple Component
+A(Input - component props) --> B(Component)
+B --> C(Output - render)
+D(Input - state) --> B
+E(Input - user actions, e.g. press) --> B
 ```
