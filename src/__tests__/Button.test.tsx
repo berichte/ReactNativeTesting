@@ -5,14 +5,14 @@ import {Button} from '../Button';
 
 describe('Button', () => {
   it('should render the title "A Button for testing"', () => {
-    const wrapper = render(
+    const {toJSON} = render(
       <Button title="A Button for testing" onPress={() => {}} />,
     );
-    expect(wrapper.toJSON()).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
   it('should render the title "TESTING"', () => {
-    const wrapper = render(<Button title="TESTING" onPress={() => {}} />);
-    expect(wrapper.toJSON()).toMatchSnapshot();
+    const {toJSON} = render(<Button title="TESTING" onPress={() => {}} />);
+    expect(toJSON()).toMatchSnapshot();
   });
   it('should call onPress when pressed', () => {
     const onPress = jest.fn();
