@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostList should render error state 1`] = `
+<Text>
+  Error: 
+  Network error
+</Text>
+`;
+
+exports[`PostList should render post list 1`] = `
+<View>
+  <View>
+    <Text>
+      Post 1
+    </Text>
+  </View>
+  <View>
+    <Text>
+      Post 2
+    </Text>
+  </View>
+  <View>
+    <Text>
+      Post 3
+    </Text>
+  </View>
+</View>
+`;
