@@ -26,7 +26,7 @@ E(Input - user actions, e.g. press) --> B
 graph TD
 %% Mocking side effects
 A(Input - arguments) --> B(Function)
-B --> C(Output - return value)
+%% B --> C(Output - return value)
 B --> E(Output - call of external function)
 F(Input - return value of external function) --> B
 %% B --> D(external function, e.g. API call)
